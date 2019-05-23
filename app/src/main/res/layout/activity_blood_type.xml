@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="216dp"
+        tools:layout_editor_absoluteY="391dp"
+        tools:ignore="MissingConstraints">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimaryDark">
+
+            <ImageView
+                android:id="@+id/img_A_plus"
+                android:layout_width="175dp"
+                android:layout_height="150dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:src="@drawable/aplus"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/img_AB_plus"
+                android:layout_width="175dp"
+                android:layout_height="150dp"
+                android:layout_below="@+id/img_A_plus"
+                android:layout_alignEnd="@+id/img_A_plus"
+                android:layout_alignRight="@+id/img_A_plus"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/abplus"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/img_B_plus" />
+
+            <ImageView
+                android:id="@+id/img_B_plus"
+                android:layout_width="175dp"
+                android:layout_height="150dp"
+                android:layout_below="@+id/img_AB_plus"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/bplus"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/img_A_plus" />
+
+            <ImageView
+                android:id="@+id/img_O_plus"
+                android:layout_width="175dp"
+                android:layout_height="150dp"
+                android:layout_below="@+id/img_B_plus"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/oplus"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/img_AB_plus"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <ImageView
+                android:id="@+id/img_A_minus"
+                android:layout_width="175dp"
+                android:layout_height="150dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:src="@drawable/aminus"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/img_A_plus"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/img_AB_minus"
+                android:layout_width="175dp"
+                android:layout_height="150dp"
+                android:layout_below="@+id/img_A_minus"
+                android:layout_alignStart="@+id/img_A_minus"
+                android:layout_alignLeft="@+id/img_A_minus"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:src="@drawable/abminus"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/img_AB_plus"
+                app:layout_constraintTop_toBottomOf="@+id/img_B_minus" />
+
+            <ImageView
+                android:id="@+id/img_B_minus"
+                android:layout_width="175dp"
+                android:layout_height="150dp"
+                android:layout_below="@+id/img_AB_minus"
+                android:layout_alignStart="@+id/img_AB_minus"
+                android:layout_alignLeft="@+id/img_AB_minus"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="328dp"
+                android:src="@drawable/bminus"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/img_B_plus"
+                app:layout_constraintTop_toBottomOf="@+id/img_A_minus"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <ImageView
+                android:id="@+id/img_O_minus"
+                android:layout_width="175dp"
+                android:layout_height="150dp"
+                android:layout_below="@+id/img_B_minus"
+                android:layout_alignStart="@+id/img_B_minus"
+                android:layout_alignLeft="@+id/img_B_minus"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:src="@drawable/ominus"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/img_O_plus"
+                app:layout_constraintTop_toBottomOf="@+id/img_AB_minus" />
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

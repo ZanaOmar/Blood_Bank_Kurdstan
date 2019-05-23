@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="100dp"
+    android:layout_centerInParent="true"
+    android:id="@+id/doctor_list_layout"
+    android:background="@drawable/button_layout"
+    android:backgroundTint="@color/button_color"
+    android:orientation="vertical"
+    android:weightSum="1"
+    tools:ignore="MissingDefaultResource">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/image_list"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@mipmap/img1"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:scaleType="centerCrop"
+            android:layout_alignParentLeft="true" />
+
+
+
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/name_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_toEndOf="@+id/imagelab"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                android:layout_toRightOf="@+id/imagelab" />
+
+            <TextView
+                android:id="@+id/city_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_alignBottom="@+id/streat"
+                android:layout_toEndOf="@+id/imagelab"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="@android:color/holo_blue_dark"
+                android:layout_toRightOf="@+id/imagelab" />
+
+            <TextView
+                android:id="@+id/blood_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="tt" />
+
+            <TextView
+                android:id="@+id/age_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="25" />
+            <TextView
+                android:id="@+id/distance_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="125dp"
+                android:layout_marginRight="10dp"
+                android:textColor="@android:color/holo_blue_dark"
+                android:textSize="16sp"
+                android:layout_alignParentRight="true" />
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/valid"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="right"
+            android:src="@mipmap/unvalid" />
+
+        <ImageView
+            android:id="@+id/call"
+            android:layout_width="31dp"
+            android:layout_height="66dp"
+            android:src="@drawable/ic_phone_black_24dp"
+            />
+    </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
